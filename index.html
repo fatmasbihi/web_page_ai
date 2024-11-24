@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Artificial Intelligence</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+  <header>
+    <h1>Understanding Artificial Intelligence</h1>
+  </header>
+  
+  <main>
+    <p id="ai-description">Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. AI can perform tasks such as recognizing speech, making decisions, and translating languages.</p>
+    
+    <h2>What is AI?</h2>
+    <p>AI encompasses a variety of subfields, including machine learning, natural language processing, and robotics. The goal of AI is to create systems that can function intelligently and independently.</p>
+    
+    <h2>Applications of AI</h2>
+    <p>AI is used in numerous applications, including:</p>
+    <ul>
+      <li>Virtual assistants (e.g., Siri, Alexa)</li>
+      <li>Image and speech recognition</li>
+      <li>Self-driving cars</li>
+      <li>Healthcare diagnostics</li>
+      <li>Recommendation systems (e.g., Netflix, Amazon)</li>
+    </ul>
+    
+    <h2>Image Example</h2>
+    <img src="https://chatai.com/wp-content/uploads/2023/11/tr71123-ai-art.jpeg" alt="Artificial Intelligence">
+    
+    <h2>Learn More</h2>
+    <p>For more information about AI, visit the following resources:</p>
+    <ul>
+      <li><a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" target="_blank">IBM - What is Artificial Intelligence?</a></li>
+      <li><a href="https://www.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Wikipedia - Artificial Intelligence</a></li>
+      <li><a href="https://www.openai.com" target="_blank">OpenAI</a></li>
+    </ul>
+    
+    <!-- Button to change text -->
+    <button onclick="changeText()">Click Me to Learn More!</button>
+
+    <!-- Section to display toggled text -->
+    <div id="toggled-text" style="margin-top: 20px; font-weight: bold;"></div>
+  </main>
+
+  <script>
+    let isOriginalText = true; // State to track which text is currently displayed
+
+    function changeText() {
+      const toggledText = document.getElementById("toggled-text");
+      if (isOriginalText) {
+        toggledText.innerText = "AI is revolutionizing various fields by automating processes, improving efficiency, and enabling new technologies.";
+      } else {
+        toggledText.innerText = "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans.";
+      }
+      isOriginalText = !isOriginalText; // Toggle the state
+    }
+  </script>
+</body>
+</html>
